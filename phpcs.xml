@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
 <ruleset name="WP-Guardrail">
 
-    <!-- Scan everything in this project -->
-    <file>.</file>
+    <!-- Only scan YOUR custom code -->
+    <file>wp-content/themes/</file>
+    <file>wp-content/plugins/</file>
 
-    <!-- Skip these folders — they are not your code -->
+    <!-- Skip vendor and core WordPress -->
     <exclude-pattern>vendor/</exclude-pattern>
     <exclude-pattern>wp-admin/</exclude-pattern>
     <exclude-pattern>wp-includes/</exclude-pattern>
