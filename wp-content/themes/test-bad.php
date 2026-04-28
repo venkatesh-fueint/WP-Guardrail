@@ -27,4 +27,4 @@ function wp_guardrail_calculate_and_output_sum( $first_number, $second_number ) 
 	}
 }
 
-wp_guardrail_calculate_and_output_sum( 5, 5 )
+wp_guardrail_calculate_and_output_sum( 5, 5 );
