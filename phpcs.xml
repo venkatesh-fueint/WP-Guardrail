@@ -2,8 +2,7 @@
 <ruleset name="WP-Guardrail">
 
     <!-- Only scan YOUR custom code -->
-    <file>wp-content/themes/</file>
-    <file>wp-content/plugins/</file>
+    <file>wp-content/</file>
 
     <!-- Skip vendor and core WordPress -->
     <exclude-pattern>vendor/</exclude-pattern>
@@ -11,7 +10,8 @@
     <exclude-pattern>wp-includes/</exclude-pattern>
     <exclude-pattern>wp-content/uploads/</exclude-pattern>
 
-    <!-- Skip ALL default WordPress themes and plugins -->
+    <!-- Skip ALL default WordPress themes, plugins, and core index files -->
+    <exclude-pattern>*/wp-content/index.php</exclude-pattern>
     <exclude-pattern>*/wp-content/themes/twenty*/*</exclude-pattern>
     <exclude-pattern>*/wp-content/themes/index.php</exclude-pattern>
     <exclude-pattern>*/wp-content/plugins/akismet/*</exclude-pattern>
