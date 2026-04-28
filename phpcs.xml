@@ -11,8 +11,12 @@
     <exclude-pattern>wp-includes/</exclude-pattern>
     <exclude-pattern>wp-content/uploads/</exclude-pattern>
 
-    <!-- Skip ALL default WordPress themes -->
-    <exclude-pattern>wp-content/themes/twenty*/</exclude-pattern>
+    <!-- Skip ALL default WordPress themes and plugins -->
+    <exclude-pattern>*/wp-content/themes/twenty*/*</exclude-pattern>
+    <exclude-pattern>*/wp-content/themes/index.php</exclude-pattern>
+    <exclude-pattern>*/wp-content/plugins/akismet/*</exclude-pattern>
+    <exclude-pattern>*/wp-content/plugins/hello.php</exclude-pattern>
+    <exclude-pattern>*/wp-content/plugins/index.php</exclude-pattern>
 
     <!-- Use the WordPress rulebook -->
     <rule ref="WordPress"/>
