@@ -14,7 +14,7 @@
  */
 function wp_guardrail_calculate_and_output_sum( $first_number, $second_number ) {
 	$sum = $first_number + $second_number;
-	$new = 0;
+$new = 0;
 
 	// Yoda condition for demonstration.
 	if ( 10 === $sum ) {
